@@ -212,7 +212,7 @@ class VoiceRecognitionService {
         console.log("End speech recognition");
     }
     formatOutput() {
-        this.text = 'Command-: ' + this.tempWords;
+        this.text = this.tempWords;
         this.tempWords = '';
     }
 }
