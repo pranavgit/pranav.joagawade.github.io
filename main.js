@@ -213,7 +213,7 @@ class VoiceRecognitionService {
     }
     formatOutput() {
         this.text = this.tempWords;
-        this.tempWords = '';
+        //this.tempWords = '';
     }
 }
 VoiceRecognitionService.ɵfac = function VoiceRecognitionService_Factory(t) { return new (t || VoiceRecognitionService)(); };
@@ -341,14 +341,9 @@ class SpeechToTextComponent {
     stopService() {
         this.service.stop();
     }
-    ngOnChanges(changes) {
-        // changes.prop contains the old and the new value...
-        this.test = changes;
-        alert(changes);
-    }
 }
 SpeechToTextComponent.ɵfac = function SpeechToTextComponent_Factory(t) { return new (t || SpeechToTextComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_service_voice_recognition_service__WEBPACK_IMPORTED_MODULE_1__["VoiceRecognitionService"])); };
-SpeechToTextComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SpeechToTextComponent, selectors: [["app-speech-to-text"]], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([_service_voice_recognition_service__WEBPACK_IMPORTED_MODULE_1__["VoiceRecognitionService"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]], decls: 22, vars: 7, consts: [[2, "margin", "30px", "margin-top", "0"], [1, "mic-start", 2, "margin", "10px", 3, "click"], [2, "margin", "10px", "display", "nones", 3, "click"], ["type", "text", "placeholder", "Serach any fields", 3, "ngModel", "ngModelChange"], ["border", "1", "width", "100%"], [4, "ngFor", "ngForOf"], ["scope", "row"]], template: function SpeechToTextComponent_Template(rf, ctx) { if (rf & 1) {
+SpeechToTextComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SpeechToTextComponent, selectors: [["app-speech-to-text"]], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([_service_voice_recognition_service__WEBPACK_IMPORTED_MODULE_1__["VoiceRecognitionService"]])], decls: 22, vars: 7, consts: [[2, "margin", "30px", "margin-top", "0"], [1, "mic-start", 2, "margin", "10px", 3, "click"], [2, "margin", "10px", "display", "nones", 3, "click"], ["type", "text", "placeholder", "Serach any fields", 3, "ngModel", "ngModelChange"], ["border", "1", "width", "100%"], [4, "ngFor", "ngForOf"], ["scope", "row"]], template: function SpeechToTextComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h2");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Test 1-: Speech to text");
