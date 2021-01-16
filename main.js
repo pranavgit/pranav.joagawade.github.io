@@ -256,7 +256,7 @@ class SpeechToTextComponent {
     }
 }
 SpeechToTextComponent.ɵfac = function SpeechToTextComponent_Factory(t) { return new (t || SpeechToTextComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_service_voice_recognition_service__WEBPACK_IMPORTED_MODULE_1__["VoiceRecognitionService"])); };
-SpeechToTextComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SpeechToTextComponent, selectors: [["app-speech-to-text"]], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([_service_voice_recognition_service__WEBPACK_IMPORTED_MODULE_1__["VoiceRecognitionService"]])], decls: 11, vars: 2, consts: [[2, "margin", "30px", "margin-top", "0"], [1, "mic-start", 2, "margin", "10px", 3, "click"], [2, "margin", "10px", "display", "nones", 3, "click"]], template: function SpeechToTextComponent_Template(rf, ctx) { if (rf & 1) {
+SpeechToTextComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SpeechToTextComponent, selectors: [["app-speech-to-text"]], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([_service_voice_recognition_service__WEBPACK_IMPORTED_MODULE_1__["VoiceRecognitionService"]])], decls: 11, vars: 1, consts: [[2, "margin", "30px", "margin-top", "0"], [1, "mic-start", 2, "margin", "10px", 3, "click"], [2, "margin", "10px", "display", "nones", 3, "click"]], template: function SpeechToTextComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h2");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Test 1-: Speech to text");
@@ -273,14 +273,12 @@ SpeechToTextComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "111");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.service.text);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.service.isSpeechEnded);
     } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3NwZWVjaC10by10ZXh0L3NwZWVjaC10by10ZXh0LmNvbXBvbmVudC5zY3NzIn0= */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](SpeechToTextComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
