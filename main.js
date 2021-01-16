@@ -198,7 +198,7 @@ class VoiceRecognitionService {
         //this.isSpeechEnded = false;
         this.recognition.start();
         console.log("Speech recognition started");
-        this.wordConcat();
+        //this.wordConcat()
         // this.recognition.addEventListener('end', (condition) => {
         //   if (this.isStoppedSpeechRecog) {
         //     this.recognition.stop();
@@ -280,7 +280,7 @@ SpeechToTextComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "12");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "13");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
