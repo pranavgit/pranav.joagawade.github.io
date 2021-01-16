@@ -182,15 +182,15 @@ class VoiceRecognitionService {
         this.recognition.onspeechend = function () {
             //this.recognition.stop();
             this.isStoppedSpeechRecog = true;
-            this.wordConcat();
+            //this.wordConcat()
             this.recognition.stop();
             console.log("End speech recognition");
             //this.isSpeechEnded = true;
         };
         this.recognition.onresult = function (event) {
             var color = event.results[0][0].transcript;
-            this.text = this.text + ' ' + this.tempWords + '.';
-            this.tempWords = '';
+            // this.text = this.text + ' ' + this.tempWords + '.';
+            // this.tempWords = '';
         };
     }
     start() {
@@ -280,7 +280,7 @@ SpeechToTextComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "11");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "12");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
