@@ -176,6 +176,7 @@ class VoiceRecognitionService {
                 .map((result) => result.transcript)
                 .join('');
             this.tempWords = transcript;
+            this.wordConcat();
             console.log(transcript);
         });
         this.recognition.onspeechend = function () {
@@ -279,7 +280,7 @@ SpeechToTextComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "10");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "11");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
