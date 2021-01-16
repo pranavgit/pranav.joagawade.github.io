@@ -186,6 +186,11 @@ class VoiceRecognitionService {
             console.log("End speech recognition");
             //this.isSpeechEnded = true;
         };
+        this.recognition.onresult = function (event) {
+            var color = event.results[0][0].transcript;
+            this.text = this.text + ' ' + this.color + '.';
+            this.color = '';
+        };
     }
     start() {
         this.isStoppedSpeechRecog = false;
@@ -202,11 +207,6 @@ class VoiceRecognitionService {
         //     this.recognition.start();
         //   }
         // });
-        this.recognition.onresult = function (event) {
-            var color = event.results[0][0].transcript;
-            this.text = this.text + ' ' + this.color + '.';
-            this.color = '';
-        };
     }
     stop() {
         this.isStoppedSpeechRecog = true;
@@ -279,7 +279,7 @@ SpeechToTextComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "11113");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "9");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
