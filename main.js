@@ -179,13 +179,17 @@ class VoiceRecognitionService {
             console.log(transcript);
         });
         this.recognition.onspeechend = function () {
-            this.isSpeechEnded = true;
+            //this.recognition.stop();
+            this.isStoppedSpeechRecog = true;
+            this.wordConcat();
             this.recognition.stop();
+            console.log("End speech recognition");
+            //this.isSpeechEnded = true;
         };
     }
     start() {
         this.isStoppedSpeechRecog = false;
-        this.isSpeechEnded = false;
+        //this.isSpeechEnded = false;
         this.recognition.start();
         console.log("Speech recognition started");
         this.recognition.addEventListener('end', (condition) => {
