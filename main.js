@@ -316,16 +316,16 @@ class SpeechToTextComponent {
         this.aa = false;
         this.users = [{
                 id: '123',
-                email: 'abc@gmail.com'
+                email: 'Pranav'
             }, {
                 id: '1234',
-                email: 'xyz@hotmail.com'
+                email: 'Veeramani'
             }, {
                 id: '12345',
-                email: 'jsgsbh@kk.com'
+                email: 'Aravind'
             }, {
                 id: '123456',
-                email: 'test@gmail.com'
+                email: 'Citibank'
             }];
         this.service.init();
     }
@@ -394,7 +394,7 @@ SpeechToTextComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.service.text);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](21, 4, ctx.users, ctx.email));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](21, 4, ctx.users, ctx.service.text));
     } }, directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgModel"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"]], pipes: [_search_pipe__WEBPACK_IMPORTED_MODULE_4__["SearchPipe"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3NwZWVjaC10by10ZXh0L3NwZWVjaC10by10ZXh0LmNvbXBvbmVudC5zY3NzIn0= */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](SpeechToTextComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
