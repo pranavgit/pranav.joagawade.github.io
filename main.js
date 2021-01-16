@@ -164,7 +164,6 @@ class VoiceRecognitionService {
     constructor() {
         this.recognition = new webkitSpeechRecognition();
         this.isStoppedSpeechRecog = false;
-        this.isSpeechEnded = false;
         this.text = '';
     }
     init() {
@@ -176,42 +175,32 @@ class VoiceRecognitionService {
                 .map((result) => result.transcript)
                 .join('');
             this.tempWords = transcript;
-            this.wordConcat();
             console.log(transcript);
         });
         this.recognition.onspeechend = function () {
-            //this.recognition.stop();
             this.isStoppedSpeechRecog = true;
-            //this.wordConcat()
+            this.wordConcat();
             this.recognition.stop();
-            console.log("End speech recognition");
-            //this.isSpeechEnded = true;
-        };
-        this.recognition.onresult = function (event) {
-            var color = event.results[0][0].transcript;
-            // this.text = this.text + ' ' + this.tempWords + '.';
-            // this.tempWords = '';
         };
     }
     start() {
         this.isStoppedSpeechRecog = false;
-        //this.isSpeechEnded = false;
         this.recognition.start();
         console.log("Speech recognition started");
-        //this.wordConcat()
-        // this.recognition.addEventListener('end', (condition) => {
-        //   if (this.isStoppedSpeechRecog) {
-        //     this.recognition.stop();
-        //     console.log("End speech recognition")
-        //   } else {
-        //     this.wordConcat()
-        //     this.recognition.start();
-        //   }
-        // });
+        this.recognition.addEventListener('end', (condition) => {
+            if (this.isStoppedSpeechRecog) {
+                this.recognition.stop();
+                console.log("End speech recognition");
+            }
+            else {
+                this.wordConcat();
+                this.recognition.start();
+            }
+        });
     }
     stop() {
         this.isStoppedSpeechRecog = true;
-        //this.wordConcat()
+        this.wordConcat();
         this.recognition.stop();
         console.log("End speech recognition");
     }
@@ -280,7 +269,7 @@ SpeechToTextComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "14");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "15");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
