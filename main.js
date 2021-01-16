@@ -192,16 +192,15 @@ class VoiceRecognitionService {
         //this.isSpeechEnded = false;
         this.recognition.start();
         console.log("Speech recognition started");
-        this.recognition.addEventListener('end', (condition) => {
-            if (this.isStoppedSpeechRecog) {
-                this.recognition.stop();
-                console.log("End speech recognition");
-            }
-            else {
-                this.wordConcat();
-                this.recognition.start();
-            }
-        });
+        // this.recognition.addEventListener('end', (condition) => {
+        //   if (this.isStoppedSpeechRecog) {
+        //     this.recognition.stop();
+        //     console.log("End speech recognition")
+        //   } else {
+        //     this.wordConcat()
+        //     this.recognition.start();
+        //   }
+        // });
     }
     stop() {
         this.isStoppedSpeechRecog = true;
