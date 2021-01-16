@@ -248,7 +248,7 @@ class SearchPipe {
             return value;
         }
         return value.filter((val) => {
-            let rVal = (val.id.toLocaleLowerCase().includes(args)) || (val.email.toLocaleLowerCase().includes(args));
+            let rVal = (val.id.toLocaleLowerCase().includes(args.toLocaleLowerCase())) || (val.email.toLocaleLowerCase().includes(args.toLocaleLowerCase()));
             return rVal;
         });
     }
@@ -317,16 +317,16 @@ class SpeechToTextComponent {
         this.aa = false;
         this.users = [{
                 id: '123',
-                email: 'Pranav'
+                email: 'abc@gmail.com'
             }, {
                 id: '1234',
-                email: 'Veeramani'
+                email: 'xyz@hotmail.com'
             }, {
                 id: '12345',
-                email: 'Aravind'
+                email: 'jsgsbh@kk.com'
             }, {
                 id: '123456',
-                email: 'Citibank'
+                email: 'test@gmail.com'
             }];
         this.service.init();
     }
@@ -386,7 +386,7 @@ SpeechToTextComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.service.text);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"]("test1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"]("test12");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.service.text);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](9);
